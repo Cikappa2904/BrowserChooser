@@ -44,8 +44,25 @@ namespace Installer
             RegistryKey RegApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
             RegApps.SetValue("Browser Chooser", "Software\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities");
             RegApps.Close();
-            RegistryKey StartMenuInternet = Registry.LocalMachine.CreateSubKey(@"BrowserChooser\Capabilities");
-            StartMenuInternet.SetValue("ApplicationDescription", "Choose what browser you want every time");
+            RegistryKey StartMenuInternet = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities");
+            StartMenuInternet.SetValue("ApplicationDescription", "Choose what browser you want to use every time");
+            string filePath2 = textBox1.Text + "\\BrowserChooser.exe" + ",0";
+            StartMenuInternet.SetValue("ApplicationIcon", filePath2);
+            StartMenuInternet.SetValue("ApplicationName", "Browser Chooser");
+            RegistryKey StartMenuInternet2 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities\\Startmenu");
+            StartMenuInternet2.SetValue("StartMenuInternet", "Browser Chooser");
+            StartMenuInternet2.Close();
+            RegistryKey StartMenuInternet3 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities\\URLAssociations");
+            StartMenuInternet3.SetValue("http", "BrowserChooserURL");
+            StartMenuInternet3.SetValue("https", "BrowserChooserURL");
+            StartMenuInternet3.Close();
+            RegistryKey StartMenuInternet4 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\DefaultIcon");
+            StartMenuInternet4.SetValue("", filePath2);
+            StartMenuInternet4.Close();
+            RegistryKey StartMenuInternet5 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
+            string filePath3 = textBox1.Text + "\\BrowserChooser.exe";
+            StartMenuInternet5.SetValue("", filePath3);
+            StartMenuInternet5.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
