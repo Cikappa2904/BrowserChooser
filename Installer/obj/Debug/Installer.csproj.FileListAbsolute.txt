@@ -14,3 +14,7 @@ D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPI
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComplete
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe.config
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml

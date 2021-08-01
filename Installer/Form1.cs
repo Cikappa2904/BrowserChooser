@@ -7,9 +7,11 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
 using System.Diagnostics;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
+
 
 namespace Installer
 {
@@ -20,28 +22,31 @@ namespace Installer
             InitializeComponent();
         }
 
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
             //Selecting where the file will be stored
-            string downloader = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe" + " -o \"" + textBox1.Text + "\\BrowserChooser.exe" + "\"";
-            string downloader2 = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Debug/Uninstaller.exe" + " -o \"" + textBox1.Text + "\\uninstaller.exe" + "\"";
-            
-            if(!Directory.Exists(textBox1.Text))
+            string downloader = textBox1.Text + "\\BrowserChooser.exe";
+            string downloader2 = "\"" + textBox1.Text + "\\uninstaller.exe" + "\"";
+            string link = "https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe";
+            if (!Directory.Exists(textBox1.Text))
             {
                 System.IO.Directory.CreateDirectory(textBox1.Text);
             }
 
             //Downloading the file
-            Process downloadProcess = new Process();
+            /*Process downloadProcess = new Process();
             downloadProcess.StartInfo.FileName = "curl";
             downloadProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden; //Hides the cmd window
             downloadProcess.StartInfo.Arguments = downloader;
-            downloadProcess.Start();
+            downloadProcess.Start();*/
+            
+
+            
             progressBar1.Value = 10;
 
-            Process downloadProcess2 = new Process();
-            downloadProcess.StartInfo.FileName = "curl";
-            downloadProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            
 
             string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
 
