@@ -11,3 +11,16 @@ D:\File Personali\Github\BrowserChooser\BrowserChooser\BrowserChooser\obj\Debug\
 D:\File Personali\Github\BrowserChooser\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.dll
 D:\File Personali\Github\BrowserChooser\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.pdb
 D:\File Personali\Github\BrowserChooser\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.genruntimeconfig.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.exe
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.deps.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.runtimeconfig.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.runtimeconfig.dev.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.dll
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\BrowserChooser.pdb
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.AssemblyInfoInputs.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.AssemblyInfo.cs
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.csproj.CoreCompileInputs.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.dll
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.pdb
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\BrowserChooser.genruntimeconfig.cache

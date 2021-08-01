@@ -1,0 +1,16 @@
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.pdb
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form1.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Properties.Resources.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.GenerateResource.cache
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.exe
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.pdb
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComplete
