@@ -24,6 +24,7 @@ namespace Installer
         {
             //Selecting where the file will be stored
             string downloader = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe" + " -o \"" + textBox1.Text + "\\BrowserChooser.exe" + "\"";
+            string downloader2 = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Debug/Uninstaller.exe" + " -o \"" + textBox1.Text + "\\uninstaller.exe" + "\"";
             
             if(!Directory.Exists(textBox1.Text))
             {
@@ -37,6 +38,10 @@ namespace Installer
             downloadProcess.StartInfo.Arguments = downloader;
             downloadProcess.Start();
             progressBar1.Value = 10;
+
+            Process downloadProcess2 = new Process();
+            downloadProcess.StartInfo.FileName = "curl";
+            downloadProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
 
             string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
 
