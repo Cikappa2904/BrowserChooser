@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PbvRorB0ngeZVQEXvrMMyMMVK02sP5KvTxLz1xDcGF/zDShfyg1gMvUnMOtkzHS6SrrAdwcwXEb1cY8Ouf0WZA==",
+  "success": true,
+  "projectFilePath": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cikap\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.17\\microsoft.netcore.app.runtime.win-x64.3.1.17.nupkg.sha512",
+    "C:\\Users\\cikap\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.17\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.17.nupkg.sha512",
+    "C:\\Users\\cikap\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.17\\microsoft.aspnetcore.app.runtime.win-x64.3.1.17.nupkg.sha512"
+  ],
+  "logs": []
+}

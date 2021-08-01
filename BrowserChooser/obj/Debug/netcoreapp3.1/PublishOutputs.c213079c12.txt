@@ -1,0 +1,5 @@
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.exe
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.dll
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.deps.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.runtimeconfig.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.pdb

@@ -3,6 +3,10 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Cikappa2904</Authors>
+    <Description>Choose what browser you want every time you click on a link</Description>
+    <PackageProjectUrl>https://github.com/Cikappa2904/BrowserChooser</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Cikappa2904/BrowserChooser</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
