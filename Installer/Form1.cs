@@ -40,12 +40,18 @@ namespace Installer
             URL.Close();
             RegistryKey Shell = Registry.ClassesRoot.CreateSubKey(@"BrowserChooserURL\shell\open\command");
             Shell.SetValue("", filePath);
+            Shell.Close();
+            RegistryKey RegApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
+            RegApps.SetValue("Browser Chooser", "Software\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities");
+            RegApps.Close();
+            RegistryKey StartMenuInternet = Registry.LocalMachine.CreateSubKey(@"BrowserChooser\Capabilities");
+            StartMenuInternet.SetValue("ApplicationDescription", "Choose what browser you want every time");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            dialog.InitialDirectory = "C:\\Users";
+            dialog.InitialDirectory = "C:\\Program Files";
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
