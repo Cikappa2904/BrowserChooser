@@ -18,3 +18,4 @@ D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe.config
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form2.resources
