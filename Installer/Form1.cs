@@ -7,9 +7,12 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Http;
 using System.Diagnostics;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
+
 
 namespace Installer
 {
@@ -18,31 +21,23 @@ namespace Installer
         public Form1()
         {
             InitializeComponent();
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
             //Selecting where the file will be stored
-            string downloader = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe" + " -o \"" + textBox1.Text + "\\BrowserChooser.exe" + "\"";
-            string downloader2 = " https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Debug/Uninstaller.exe" + " -o \"" + textBox1.Text + "\\uninstaller.exe" + "\"";
-            
-            if(!Directory.Exists(textBox1.Text))
+            string downloadPath = textBox1.Text + "\\BrowserChooser.exe";
+            string downloadPath2 = textBox1.Text + "\\uninstaller.exe";
+            Uri downloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe");
+            Uri downloadLink2 = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Debug/Uninstaller.exe");
+            if (!Directory.Exists(textBox1.Text))
             {
                 System.IO.Directory.CreateDirectory(textBox1.Text);
             }
-
-            //Downloading the file
-            Process downloadProcess = new Process();
-            downloadProcess.StartInfo.FileName = "curl";
-            downloadProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden; //Hides the cmd window
-            downloadProcess.StartInfo.Arguments = downloader;
-            downloadProcess.Start();
-            progressBar1.Value = 10;
-
-            Process downloadProcess2 = new Process();
-            downloadProcess.StartInfo.FileName = "curl";
-            downloadProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-
+            
             string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
 
             RegistryKey URL = Registry.ClassesRoot.CreateSubKey(@"BrowserChooserURL");
@@ -88,7 +83,18 @@ namespace Installer
             string filePath3 = textBox1.Text + "\\BrowserChooser.exe";
             StartMenuInternet5.SetValue("", filePath3);
             StartMenuInternet5.Close();
+            progressBar1.Value = 80;
+
+            WebClient myWebClient = new WebClient();
+            myWebClient.DownloadFile(downloadLink, downloadPath); //Downloading BrowserChooser.exe
+            progressBar1.Value = 90;
+            myWebClient.DownloadFile(downloadLink2, downloadPath2); //Downloading uninstaller.exe
             progressBar1.Value = 100;
+
+            Form2 form = new Form2();
+            form.Show();
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

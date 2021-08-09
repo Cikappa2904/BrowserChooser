@@ -29,6 +29,7 @@ namespace Uninstaller
             RegApps.DeleteValue("Browser Chooser");
             
 
+
         }
     }
 }
