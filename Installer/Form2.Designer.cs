@@ -75,7 +75,7 @@ namespace Installer
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Installer";
             this.ResumeLayout(false);
             this.PerformLayout();
 
