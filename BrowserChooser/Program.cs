@@ -8,8 +8,6 @@ namespace BrowserChooser
         static void Main(string[] args)
         {
             string argument = " Shell32.dll,OpenAs_RunDLL "  + args[0] ;
-            Console.WriteLine(argument);
-            //Console.ReadLine();
             Process.Start("Rundll32.exe", argument);
         }
     }
