@@ -28,6 +28,8 @@ namespace Installer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string version = "0.2.2";
+
             //Selecting where the file will be stored
             string downloadPath = textBox1.Text + "\\BrowserChooser.exe";
             string downloadPath2 = textBox1.Text + "\\uninstaller.exe";
@@ -39,6 +41,15 @@ namespace Installer
             }
             
             string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
+
+            RegistryKey uninstall = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Browser Chooser");
+            uninstall.SetValue("DisplayIcon", downloadPath);
+            uninstall.SetValue("DisplayName", "Browser Chooser");
+            uninstall.SetValue("DisplayVersion", version);
+            uninstall.SetValue("UninstallString", downloadPath2);
+            uninstall.SetValue("Publisher", "Cikappa2904");
+
+
 
             RegistryKey URL = Registry.ClassesRoot.CreateSubKey(@"BrowserChooserURL");
             URL.SetValue("", "Browser Chooser");
@@ -107,5 +118,7 @@ namespace Installer
                 textBox1.Text = dialog.FileName;
             }
         }
+
+       
     }
 }
