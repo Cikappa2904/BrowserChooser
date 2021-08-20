@@ -8,21 +8,69 @@ using System.Text;
 using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
+using System.Diagnostics;
+
+
+
 
 namespace Installer
 {
+   
     public partial class Form2 : Form
     {
+        
         public Form2()
         {
+
+            RegistryKey reg = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
+            string productName = (string)reg.GetValue("ProductName");
+
+
             SystemSounds.Asterisk.Play();
+
+            
+
+
             InitializeComponent();
+            if (productName.Contains("10") || productName.Contains("11"))
+            {
+                label2.Text = "You'll now need to set Browser Chooser as the default browser inside Windows Settings!";
+                winSettings.Text = "Open Windows Settings";
+            }
+            else
+            {
+                label2.Text = "You'll now need to set Browser Chooser as the default browser inside Control Panel!";
+                winSettings.Text = "Open Windows Settings";
+            }
         }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
 
             Application.Exit();
+        }
+
+        private void winSettings_Click(object sender, EventArgs e)
+        {
+            RegistryKey reg = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
+            string productName = (string)reg.GetValue("ProductName");
+
+
+            if (productName.Contains("10") || productName.Contains("11"))
+            {
+                Process.Start("ms-settings:defaultapps");
+            }
+            else
+            {
+                Process.Start("control /name Microsoft.DefaultPrograms");
+            }
+            
+
+
+
         }
     }
 }

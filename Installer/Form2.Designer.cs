@@ -32,6 +32,7 @@ namespace Installer
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.winSettings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +56,7 @@ namespace Installer
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(201, 89);
+            this.button1.Location = new System.Drawing.Point(209, 89);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -63,11 +64,22 @@ namespace Installer
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // winSettings
+            // 
+            this.winSettings.Location = new System.Drawing.Point(44, 89);
+            this.winSettings.Name = "winSettings";
+            this.winSettings.Size = new System.Drawing.Size(142, 23);
+            this.winSettings.TabIndex = 3;
+            this.winSettings.Text = "Open Windows Settings";
+            this.winSettings.UseVisualStyleBackColor = true;
+            this.winSettings.Click += new System.EventHandler(this.winSettings_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 135);
+            this.Controls.Add(this.winSettings);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -86,5 +98,6 @@ namespace Installer
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button winSettings;
     }
 }
