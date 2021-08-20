@@ -1,3 +1,4 @@
+D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.exe.config
 D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.exe
 D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.pdb
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.csproj.AssemblyReference.cache

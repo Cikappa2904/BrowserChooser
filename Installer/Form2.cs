@@ -41,7 +41,7 @@ namespace Installer
             else
             {
                 label2.Text = "You'll now need to set Browser Chooser as the default browser inside Control Panel!";
-                winSettings.Text = "Open Windows Settings";
+                winSettings.Text = "Open Control Panel";
             }
         }
 
@@ -65,7 +65,7 @@ namespace Installer
             }
             else
             {
-                Process.Start("control /name Microsoft.DefaultPrograms");
+                Process.Start("control.exe", "/name Microsoft.DefaultPrograms");
             }
             
 
