@@ -24,13 +24,32 @@ namespace Uninstaller
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RegistryKey FileName = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
+            RegistryKey FileName = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
             string filePath = (string)FileName.GetValue("");
-            File.Delete(filePath);
-            Registry.ClassesRoot.DeleteSubKeyTree("BrowserChooserURL");
-            Registry.LocalMachine.DeleteSubKeyTree("Software\\Clients\\StartMenuInternet\\BrowserChooser");
-            RegistryKey RegApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
-            RegApps.DeleteValue("Browser Chooser");
+
+            if (File.Exists(filePath)) //Check if file exists
+            {
+                File.Delete(filePath);
+            }
+            
+            if (Registry.ClassesRoot.OpenSubKey("BrowserChooserURL")!=null) //Check if the Key BrowserChooserURL exists
+            {
+                Registry.ClassesRoot.DeleteSubKeyTree("BrowserChooserURL");
+            }
+
+            if (Registry.LocalMachine.OpenSubKey("Software\\Clients\\StartMenuInternet\\BrowserChooser")!=null) //Check if the key BrowserChooser exists
+            {
+                Registry.LocalMachine.DeleteSubKeyTree("Software\\Clients\\StartMenuInternet\\BrowserChooser");
+            }
+                
+            
+            RegistryKey regApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
+            if (Registry.GetValue(@"HKEY_LOCAL_MACHINE\\SOFTWARE\\RegisteredApplications", "Browser Chooser", null) != null) //Check if the value Browser Chooser exists
+            {
+                regApps.DeleteValue("Browser Chooser");
+            }
+
+            
             Process.Start(new ProcessStartInfo()
             {
                 Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
