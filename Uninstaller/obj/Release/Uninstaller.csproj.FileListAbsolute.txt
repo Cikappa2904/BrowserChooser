@@ -1,0 +1,10 @@
+D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Release\Uninstaller.exe.config
+D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Release\Uninstaller.exe
+D:\File Personali\Github\BrowserChooser\Uninstaller\bin\Release\Uninstaller.pdb
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.Form1.resources
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.Properties.Resources.resources
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.csproj.GenerateResource.cache
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.csproj.CoreCompileInputs.cache
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.exe
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.pdb
