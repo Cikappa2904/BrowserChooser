@@ -73,7 +73,7 @@ namespace Installer
 
             string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall" + Environment.NewLine);
             RegistryKey uninstall = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Browser Chooser");
             uninstall.SetValue("DisplayIcon", downloadPath);
             uninstall.SetValue("DisplayName", "Browser Chooser");
@@ -82,7 +82,7 @@ namespace Installer
             uninstall.SetValue("Publisher", "Cikappa2904");
 
 
-            progressText.AppendText("Adding registry keys to HKCR" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKCR" + Environment.NewLine);
             RegistryKey URL = Registry.ClassesRoot.CreateSubKey(@"BrowserChooserURL");
             URL.SetValue("", "Browser Chooser");
             URL.SetValue("FriendlyTypeName", "Browser Chooser");
@@ -90,19 +90,19 @@ namespace Installer
             URL.Close();
             progressBar1.Value = 20;
 
-            progressText.AppendText("Adding registry keys to HKCR\\BrowserChooserURL" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKCR\\BrowserChooserURL" + Environment.NewLine);
             RegistryKey Shell = Registry.ClassesRoot.CreateSubKey(@"BrowserChooserURL\shell\open\command");
             Shell.SetValue("", filePath);
             Shell.Close();
             progressBar1.Value = 30;
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\RegisteredApplications" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\RegisteredApplications" + Environment.NewLine);
             RegistryKey RegApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
             RegApps.SetValue("Browser Chooser", "Software\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities");
             RegApps.Close();
             progressBar1.Value = 40;
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet" + Environment.NewLine);
             RegistryKey StartMenuInternet = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities");
             StartMenuInternet.SetValue("ApplicationDescription", "Choose what browser you want to use every time");
             string filePath2 = textBox1.Text + "\\BrowserChooser.exe" + ",0";
@@ -111,26 +111,26 @@ namespace Installer
             StartMenuInternet.Close();
             progressBar1.Value = 50;
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
             RegistryKey StartMenuInternet2 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities\\Startmenu");
             StartMenuInternet2.SetValue("StartMenuInternet", "Browser Chooser");
             StartMenuInternet2.Close();
             progressBar1.Value = 60;
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
             RegistryKey StartMenuInternet3 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities\\URLAssociations");
             StartMenuInternet3.SetValue("http", "BrowserChooserURL");
             StartMenuInternet3.SetValue("https", "BrowserChooserURL");
             StartMenuInternet3.Close();
             progressBar1.Value = 70;
 
-            progressText.AppendText("Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser" + Environment.NewLine);
+            progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser" + Environment.NewLine);
             RegistryKey StartMenuInternet4 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\DefaultIcon");
             StartMenuInternet4.SetValue("", filePath2);
             StartMenuInternet4.Close();
             progressBar1.Value = 80;
 
-            progressText.AppendText("Adding registry values to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command" + Environment.NewLine);
+            progressText.AppendText("- Adding registry values to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command" + Environment.NewLine);
             RegistryKey StartMenuInternet5 = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
             string filePath3 = textBox1.Text + "\\BrowserChooser.exe";
             StartMenuInternet5.SetValue("", filePath3);
