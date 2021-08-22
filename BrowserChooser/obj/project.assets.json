@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\pinol\\.nuget\\packages\\": {},
+    "C:\\Users\\cikap\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "0.2.2",
     "restore": {
-      "projectUniqueName": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
+      "projectUniqueName": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
       "projectName": "BrowserChooser",
-      "projectPath": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
-      "packagesPath": "C:\\Users\\pinol\\.nuget\\packages\\",
-      "outputPath": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\obj\\",
+      "projectPath": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
+      "packagesPath": "C:\\Users\\cikap\\.nuget\\packages\\",
+      "outputPath": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pinol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cikap\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
