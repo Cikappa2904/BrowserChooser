@@ -10,7 +10,7 @@ Browser Chooser is a small utility made in .NET that when set as the default bro
 
 - Windows 11 
 - Windows 10
-- Windows 8.1 (haven't tested it but it should work)
+- Windows 8.1
 - Windows 7 (on Windows 7 the Windows API used for selecting the browser doesn't actually show a list of all browsers but a list of all programs installed on the PC)
 
 ### Known Issues
