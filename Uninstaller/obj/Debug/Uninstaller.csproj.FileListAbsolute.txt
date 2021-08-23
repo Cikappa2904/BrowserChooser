@@ -20,3 +20,5 @@ D:\Claudio\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.exe
 D:\Claudio\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.pdb
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Form2.resources
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Form3.resources
+D:\Claudio\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Form2.resources
+D:\Claudio\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Form3.resources

@@ -15,6 +15,7 @@ namespace Uninstaller
     public partial class Form1 : Form
     {
         private ProgressBar progressBar;
+        private TextBox logTextBox;
 
         public Form1()
         {
@@ -33,12 +34,15 @@ namespace Uninstaller
             this.Hide();
 
             progressBar = form2.progressBar1;
+            logTextBox = form2.logTextBox;
 
             
             RegistryKey FileName = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
             if(FileName!=null)
             {
                 string filePath = FileName.GetValue("") as string;
+                logTextBox.AppendText("- Deleting BrowserChooser.exe" + Environment.NewLine);
+
 
                 if (File.Exists(filePath)) //Check if file exists
                 {
@@ -52,6 +56,7 @@ namespace Uninstaller
             
             if (Registry.ClassesRoot.OpenSubKey("BrowserChooserURL")!=null) //Check if the Key BrowserChooserURL exists
             {
+                logTextBox.AppendText("- Deleting HKCR\\BrowserChooserURL" + Environment.NewLine);
                 Registry.ClassesRoot.DeleteSubKeyTree("BrowserChooserURL");
                 progressBar.Value = 40;
 
@@ -59,6 +64,7 @@ namespace Uninstaller
 
             if (Registry.LocalMachine.OpenSubKey("Software\\Clients\\StartMenuInternet\\BrowserChooser")!=null) //Check if the key BrowserChooser exists
             {
+                logTextBox.AppendText("- Deleting HKLM\\Software\\Clients\\StartMenuInternet\\BrowserChooser" + Environment.NewLine);
                 Registry.LocalMachine.DeleteSubKeyTree("Software\\Clients\\StartMenuInternet\\BrowserChooser");
                 progressBar.Value = 60;
 
@@ -68,6 +74,7 @@ namespace Uninstaller
             RegistryKey regApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
             if (Registry.GetValue(@"HKEY_LOCAL_MACHINE\\SOFTWARE\\RegisteredApplications", "Browser Chooser", null) != null) //Check if the value Browser Chooser exists
             {
+                logTextBox.AppendText("- Deleting HKLM\\SOFTWARE\\RegisteredApplications\\Browser Chooser" + Environment.NewLine);
                 regApps.DeleteValue("Browser Chooser");
                 progressBar.Value = 80;
 

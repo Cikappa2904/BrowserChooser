@@ -39,17 +39,19 @@ namespace Installer
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 148);
+            this.textBox1.Location = new System.Drawing.Point(33, 228);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 20);
+            this.textBox1.Size = new System.Drawing.Size(396, 26);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "C:\\Program Files\\BrowserChooser";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(297, 148);
+            this.button2.Location = new System.Drawing.Point(446, 228);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 20);
+            this.button2.Size = new System.Drawing.Size(112, 31);
             this.button2.TabIndex = 3;
             this.button2.Text = "Browse";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@ namespace Installer
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(41, 51);
+            this.welcomeLabel.Location = new System.Drawing.Point(62, 78);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(304, 21);
+            this.welcomeLabel.Size = new System.Drawing.Size(458, 32);
             this.welcomeLabel.TabIndex = 5;
             this.welcomeLabel.Text = "Welcome to Browser Chooser installer!";
             // 
@@ -69,26 +72,29 @@ namespace Installer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 72);
+            this.label1.Location = new System.Drawing.Point(28, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(353, 13);
+            this.label1.Size = new System.Drawing.Size(519, 23);
             this.label1.TabIndex = 6;
             this.label1.Text = "Setup will install and configure Browser Chooser on your computer";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 132);
+            this.label2.Location = new System.Drawing.Point(28, 203);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(171, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Choose install location:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(154, 215);
+            this.button1.Location = new System.Drawing.Point(231, 331);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 9;
             this.button1.Text = "Install";
             this.button1.UseVisualStyleBackColor = true;
@@ -96,10 +102,11 @@ namespace Installer
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.ClientSize = new System.Drawing.Size(576, 402);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -107,6 +114,7 @@ namespace Installer
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

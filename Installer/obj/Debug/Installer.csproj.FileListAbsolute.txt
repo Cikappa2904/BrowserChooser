@@ -41,3 +41,4 @@ D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComple
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.exe
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.pdb
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources
+D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources

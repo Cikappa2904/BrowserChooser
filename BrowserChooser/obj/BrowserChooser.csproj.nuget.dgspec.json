@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj": {}
+    "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj": {}
   },
   "projects": {
-    "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj": {
+    "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj": {
       "version": "0.2.2",
       "restore": {
-        "projectUniqueName": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
+        "projectUniqueName": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
         "projectName": "BrowserChooser",
-        "projectPath": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
-        "packagesPath": "C:\\Users\\cikap\\.nuget\\packages\\",
-        "outputPath": "D:\\File Personali\\Github\\BrowserChooser\\BrowserChooser\\obj\\",
+        "projectPath": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\BrowserChooser.csproj",
+        "packagesPath": "C:\\Users\\pinol\\.nuget\\packages\\",
+        "outputPath": "D:\\Claudio\\GitHub\\BrowserChooser\\BrowserChooser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cikap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pinol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
