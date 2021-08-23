@@ -19,3 +19,4 @@ D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.C
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.CopyComplete
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.pdb
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.Form3.resources

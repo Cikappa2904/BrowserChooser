@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {},
     ".NETCoreApp,Version=v3.1/win-x64": {
-      "BrowserChooser/0.2.2": {
+      "BrowserChooser/1.0.0.0": {
         "dependencies": {
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "3.1.17"
         },
@@ -849,7 +849,7 @@
     }
   },
   "libraries": {
-    "BrowserChooser/0.2.2": {
+    "BrowserChooser/1.0.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,3 +8,5 @@ D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.cspr
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.csproj.CoreCompileInputs.cache
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.exe
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.pdb
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.Form2.resources
+D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Release\Uninstaller.Form3.resources

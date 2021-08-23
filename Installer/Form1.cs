@@ -48,7 +48,7 @@ namespace Installer
    
         private void button1_Click(object sender, EventArgs e)
         {
-            string version = "0.2.2";
+            string version = "1.0.0.0";
 
             Form3 form3 = new Form3();
             progressBar1 = form3.progressBar1;
@@ -62,7 +62,7 @@ namespace Installer
             string downloadPath2 = textBox1.Text + "\\uninstaller.exe";
 
             Uri downloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe");
-            Uri downloadLink2 = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Debug/Uninstaller.exe");
+            Uri downloadLink2 = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Release/Uninstaller.exe");
 
 
             if (!Directory.Exists(textBox1.Text))
