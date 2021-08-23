@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "BrowserChooser/0.2.2": {
+      "BrowserChooser/1.0.0.0": {
         "runtime": {
           "BrowserChooser.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "BrowserChooser/0.2.2": {
+    "BrowserChooser/1.0.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -79,6 +79,7 @@ namespace Uninstaller
                 progressBar.Value = 80;
 
             }
+            
 
             progressBar.Value = 100;
 
