@@ -48,7 +48,7 @@ namespace Installer
    
         private void button1_Click(object sender, EventArgs e)
         {
-            string version = "1.0.0.0";
+            string version = "0.3.0.0";
 
             Form3 form3 = new Form3();
             progressBar1 = form3.progressBar1;
