@@ -28,17 +28,27 @@ namespace Uninstaller
         {
 
             Form2 form2 = new Form2();
+            form2.Show();
+            form2.Update(); //This is necessary to make the label display correctly, don't know if I'm just stupid or if it's a compiler bug
+            this.Hide();
+
             progressBar = form2.progressBar1;
 
-
+            
             RegistryKey FileName = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
-            string filePath = (string)FileName.GetValue("");
-
-            if (File.Exists(filePath)) //Check if file exists
+            if(FileName!=null)
             {
-                File.Delete(filePath);
-                progressBar.Value = 20;
+                string filePath = FileName.GetValue("") as string;
+
+                if (File.Exists(filePath)) //Check if file exists
+                {
+                    File.Delete(filePath);
+                    progressBar.Value = 20;
+                }
             }
+            
+
+            
             
             if (Registry.ClassesRoot.OpenSubKey("BrowserChooserURL")!=null) //Check if the Key BrowserChooserURL exists
             {
@@ -65,15 +75,10 @@ namespace Uninstaller
 
             progressBar.Value = 100;
 
-
-            Process.Start(new ProcessStartInfo()
-            {
-                Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
-                WindowStyle = ProcessWindowStyle.Hidden,
-                CreateNoWindow = true,
-                FileName = "cmd.exe"
-            });
-            Application.Exit();
+            Form3 form3 = new Form3();
+            form3.Show();
+            form2.Hide();
+           
 
 
 
