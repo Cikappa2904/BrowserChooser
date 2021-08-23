@@ -44,7 +44,6 @@ namespace Installer
             this.textBox1.Size = new System.Drawing.Size(265, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "C:\\Program Files\\BrowserChooser";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
