@@ -56,6 +56,7 @@ namespace Installer
 
             this.Hide();
             form3.Show();
+            form3.Update(); //Like in uninstaller, don't exactly now if this is the right way to do it, but this makes the label display correctly lol
 
             //Selecting where the file will be stored
             string downloadPath = textBox1.Text + "\\BrowserChooser.exe";
