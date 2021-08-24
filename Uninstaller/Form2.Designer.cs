@@ -29,6 +29,7 @@ namespace Uninstaller
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.logTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -36,44 +37,41 @@ namespace Uninstaller
             // 
             // logTextBox
             // 
-            this.logTextBox.Location = new System.Drawing.Point(20, 88);
-            this.logTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.logTextBox.Location = new System.Drawing.Point(13, 57);
             this.logTextBox.Multiline = true;
             this.logTextBox.Name = "logTextBox";
             this.logTextBox.ReadOnly = true;
             this.logTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.logTextBox.Size = new System.Drawing.Size(536, 256);
+            this.logTextBox.Size = new System.Drawing.Size(359, 168);
             this.logTextBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(64, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 23);
+            this.label1.Size = new System.Drawing.Size(258, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Setup is removing Browser Chooser from your PC";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(20, 357);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Location = new System.Drawing.Point(13, 232);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(538, 35);
+            this.progressBar1.Size = new System.Drawing.Size(359, 23);
             this.progressBar1.TabIndex = 2;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 402);
+            this.ClientSize = new System.Drawing.Size(384, 261);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uninstaller";

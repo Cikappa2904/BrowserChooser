@@ -48,7 +48,7 @@ namespace Installer
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(297, 148);
+            this.button2.Location = new System.Drawing.Point(297, 147);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 20);
             this.button2.TabIndex = 3;
@@ -60,7 +60,7 @@ namespace Installer
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(41, 51);
+            this.welcomeLabel.Location = new System.Drawing.Point(37, 51);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(304, 21);
             this.welcomeLabel.TabIndex = 5;
@@ -70,7 +70,7 @@ namespace Installer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 72);
+            this.label1.Location = new System.Drawing.Point(12, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(353, 13);
             this.label1.TabIndex = 6;

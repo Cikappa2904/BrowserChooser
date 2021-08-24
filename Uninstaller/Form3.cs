@@ -15,6 +15,7 @@ namespace Uninstaller
     {
         public Form3()
         {
+            System.Media.SystemSounds.Asterisk.Play();
             InitializeComponent();
         }
 
