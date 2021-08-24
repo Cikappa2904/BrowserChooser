@@ -1,5 +1,5 @@
 # BrowserChooser
-Browser Chooser is a small utility made in .NET that when set as the default browser inside Windows Settings, prompt you for which browser to use to open any link you open outside of a browser.
+Browser Chooser is a small Windows utility made in .NET that when set as the default browser inside Windows Settings, prompt you for which browser to use to open any link you open outside of a browser.
 
 
 ### Requires:
