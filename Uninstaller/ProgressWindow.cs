@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Uninstaller
 {
-    public partial class Form2 : Form
+    public partial class ProgressWindow : Form
     {
-        public Form2()
+        public ProgressWindow()
         {
             InitializeComponent();
         }

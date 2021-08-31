@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Uninstaller
 {
-    public partial class Form3 : Form
+    public partial class CompletedWindow : Form
     {
-        public Form3()
+        public CompletedWindow()
         {
             System.Media.SystemSounds.Asterisk.Play();
             InitializeComponent();

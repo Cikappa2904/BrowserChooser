@@ -1,7 +1,7 @@
 ﻿
 namespace Uninstaller
 {
-    partial class Form3
+    partial class CompletedWindow
     {
         /// <summary>
         /// Required designer variable.

@@ -25,7 +25,7 @@ namespace Uninstaller
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Form2 form2 = new Form2();
+            ProgressWindow form2 = new ProgressWindow();
             form2.Show();
             form2.Update(); //This is necessary to make the label display correctly, don't know if I'm just stupid or if it's a compiler bug
             this.Hide();
@@ -55,7 +55,7 @@ namespace Uninstaller
             UninstallClass.DeleteUninstallRegBrowserChooser();
             progressBar.Value = 100;
 
-            Form3 form3 = new Form3();
+            CompletedWindow form3 = new CompletedWindow();
             form3.Show();
             form2.Hide();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Uninstaller
 {
-    partial class Form2
+    partial class ProgressWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Uninstaller
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgressWindow));
             this.logTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
