@@ -48,7 +48,7 @@ namespace Installer
    
         private void button1_Click(object sender, EventArgs e)
         {
-            string version = "0.3.0.0";
+            string version = "0.3.0.1";
 
             Form3 form3 = new Form3();
             progressBar1 = form3.progressBar1;
@@ -79,6 +79,8 @@ namespace Installer
             uninstall.SetValue("DisplayIcon", downloadPath);
             uninstall.SetValue("DisplayName", "Browser Chooser");
             uninstall.SetValue("DisplayVersion", version);
+            string silentUninstall = downloadPath + " /s";
+            uninstall.SetValue("QuietUninstallString", silentUninstall);
             uninstall.SetValue("UninstallString", downloadPath2);
             uninstall.SetValue("Publisher", "Cikappa2904");
 
@@ -150,5 +152,8 @@ namespace Installer
             Form2 form2 = new Form2();
             form2.Show();
         }
+
+         
+       
     }
 }
