@@ -15,4 +15,4 @@ Browser Chooser is a small Windows utility made in .NET that when set as the def
 
 
 
-#### If you find any more issues, make sure to report them in the issues section of GitHub
+#### If you find any issues, make sure to report them in the issues section of GitHub
