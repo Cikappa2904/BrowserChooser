@@ -1,0 +1,2 @@
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.pdb
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\publish\BrowserChooser.exe

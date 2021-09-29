@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>Cikappa2904</Authors>
     <Description>Choose what browser you want every time you click on a link</Description>
@@ -10,6 +10,7 @@
     <FileVersion>0.3.0.0</FileVersion>
     <Version>0.3.0.0</Version>
     <ApplicationIcon>256x256.ico</ApplicationIcon>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
 </Project>

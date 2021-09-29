@@ -1,0 +1,13 @@
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.exe
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.deps.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.runtimeconfig.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.runtimeconfig.dev.json
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.dll
+D:\File Personali\Github\BrowserChooser\BrowserChooser\bin\Debug\netcoreapp3.1\win-x64\BrowserChooser.pdb
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.GeneratedMSBuildEditorConfig.editorconfig
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.AssemblyInfoInputs.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.AssemblyInfo.cs
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.csproj.CoreCompileInputs.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.dll
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.pdb
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Debug\netcoreapp3.1\win-x64\BrowserChooser.genruntimeconfig.cache
