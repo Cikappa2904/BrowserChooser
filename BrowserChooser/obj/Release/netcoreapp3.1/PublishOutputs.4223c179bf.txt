@@ -1,0 +1,5 @@
+C:\Users\cikap\Desktop\BrowserChooser.exe
+C:\Users\cikap\Desktop\BrowserChooser.dll
+C:\Users\cikap\Desktop\BrowserChooser.deps.json
+C:\Users\cikap\Desktop\BrowserChooser.runtimeconfig.json
+C:\Users\cikap\Desktop\BrowserChooser.pdb

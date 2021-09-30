@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.Diagnostics;
 using System.IO;
 
 namespace Uninstaller
@@ -19,13 +20,21 @@ namespace Uninstaller
             if (args.Length > 0 && args[0] == "/s")
             {
 
-                RegistryKey FileName = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
-                string filePath = (string)FileName.GetValue("");
-                File.Delete(filePath);
-                Registry.ClassesRoot.DeleteSubKeyTree("BrowserChooserURL");
-                Registry.LocalMachine.DeleteSubKeyTree("Software\\Clients\\StartMenuInternet\\BrowserChooser");
-                RegistryKey RegApps = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\RegisteredApplications", true);
-                RegApps.DeleteValue("Browser Chooser");
+                UninstallClass.DeleteUninstaller();
+
+                UninstallClass.DeleteBrowserChooserURL();
+                UninstallClass.DeleteSMIBrowserChooser();
+                UninstallClass.DeleteRegAppBrowserChooser();
+                UninstallClass.DeleteUninstallRegBrowserChooser();
+
+                Process.Start(new ProcessStartInfo() //Deletes the program after 3 seconds
+                {
+                    Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    CreateNoWindow = true,
+                    FileName = "cmd.exe"
+                });
+
                 Application.Exit();
             }
             else
