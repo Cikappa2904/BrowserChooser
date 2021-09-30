@@ -10,14 +10,7 @@ D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe.config
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.pdb
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.dll
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.pdb
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.xml
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
-D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
 D:\Claudio\GitHub\BrowserChooser\Installer\bin\Debug\Installer.exe.config
 D:\Claudio\GitHub\BrowserChooser\Installer\bin\Debug\Installer.exe
 D:\Claudio\GitHub\BrowserChooser\Installer\bin\Debug\Installer.pdb
@@ -42,3 +35,5 @@ D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.pdb
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComplete
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
