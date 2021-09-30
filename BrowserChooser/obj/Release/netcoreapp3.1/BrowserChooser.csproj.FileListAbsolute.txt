@@ -11,3 +11,4 @@ D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Release\netcoreapp3.1
 D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Release\netcoreapp3.1\BrowserChooser.pdb
 D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Release\netcoreapp3.1\BrowserChooser.genruntimeconfig.cache
 D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Release\netcoreapp3.1\BrowserChooser.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\BrowserChooser\obj\Release\netcoreapp3.1\BrowserChooser.GeneratedMSBuildEditorConfig.editorconfig

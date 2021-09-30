@@ -27,10 +27,7 @@ namespace Installer
             string productName = (string)reg.GetValue("ProductName");
 
 
-            SystemSounds.Asterisk.Play();
-
-            
-
+            SystemSounds.Asterisk.Play(); //Playing Windows default sound
 
             InitializeComponent();
             if (productName.Contains("10") || productName.Contains("11"))
@@ -49,7 +46,6 @@ namespace Installer
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             Application.Exit();
         }
 

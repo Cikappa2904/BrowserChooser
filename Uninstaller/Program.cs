@@ -16,7 +16,7 @@ namespace Uninstaller
         static void Main(string[] args)
         {
 
-            if (args.Length > 0 && args[0] == "/SILENT")
+            if (args.Length > 0 && args[0] == "/s")
             {
 
                 RegistryKey FileName = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command");
@@ -32,7 +32,7 @@ namespace Uninstaller
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
+                Application.Run(new MainWindow());
 
             }
 

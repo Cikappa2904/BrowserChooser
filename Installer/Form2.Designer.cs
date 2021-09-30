@@ -38,25 +38,27 @@ namespace Installer
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(184, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(125, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Installation completed!";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 60);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(422, 13);
+            this.label2.Size = new System.Drawing.Size(464, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "You\'ll now need to set Browser Chooser as the default browser inside Windows Sett" +
     "ings!";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(209, 89);
+            this.button1.Location = new System.Drawing.Point(406, 89);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -66,7 +68,7 @@ namespace Installer
             // 
             // winSettings
             // 
-            this.winSettings.Location = new System.Drawing.Point(44, 89);
+            this.winSettings.Location = new System.Drawing.Point(20, 89);
             this.winSettings.Name = "winSettings";
             this.winSettings.Size = new System.Drawing.Size(142, 23);
             this.winSettings.TabIndex = 3;
@@ -87,6 +89,7 @@ namespace Installer
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Installer";
             this.ResumeLayout(false);
             this.PerformLayout();
