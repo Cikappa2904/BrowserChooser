@@ -22,9 +22,7 @@ namespace Installer
     {
         private ProgressBar progressBar1;
         private TextBox progressText;
-        private FolderBrowserDialog folderBrowserDialog;
 
-      
         public Form1()
         {
 
@@ -32,9 +30,6 @@ namespace Installer
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.folderBrowserDialog.ShowNewFolderButton = true;
-            this.folderBrowserDialog.RootFolder = Environment.SpecialFolder.ProgramFiles;
         }
 
         public string Get_Form1Text()
@@ -45,15 +40,6 @@ namespace Installer
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-
-            //CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            //    dialog.InitialDirectory = Environment.SpecialFolder.ProgramFiles.ToString();
-            //    dialog.IsFolderPicker = true;
-            //    if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            //    {
-            //       textBox1.Text = dialog.FileName;
-            //    }
 
             System.Windows.Forms.OpenFileDialog folderBrowser = new System.Windows.Forms.OpenFileDialog();
             folderBrowser.ValidateNames = false;

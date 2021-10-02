@@ -58,6 +58,7 @@ namespace Installer
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(406, 89);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -68,6 +69,7 @@ namespace Installer
             // 
             // winSettings
             // 
+            this.winSettings.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winSettings.Location = new System.Drawing.Point(20, 89);
             this.winSettings.Name = "winSettings";
             this.winSettings.Size = new System.Drawing.Size(142, 23);
