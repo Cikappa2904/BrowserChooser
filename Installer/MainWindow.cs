@@ -18,12 +18,12 @@ using System.Security.Principal;
 
 namespace Installer
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         private ProgressBar progressBar1;
         private TextBox progressText;
 
-        public Form1()
+        public MainWindow()
         {
 
             InitializeComponent();
@@ -59,7 +59,7 @@ namespace Installer
         {
             string version = "0.3.0.1";
 
-            Form3 form3 = new Form3();
+            InstallationProgress form3 = new InstallationProgress();
             progressBar1 = form3.progressBar1;
             progressText = form3.textBox1;
 
@@ -126,7 +126,7 @@ namespace Installer
             InstallerClass.Download(uninstallerDownloadLink, uninstallerDownloadPath); //Download Uninstaller.exe from GitHub
             progressBar1.Value = 100;
 
-            Form2 form2 = new Form2();
+            InstallationCompleted form2 = new InstallationCompleted();
             form2.Show();
         }
 

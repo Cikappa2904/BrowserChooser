@@ -17,10 +17,10 @@ using System.Diagnostics;
 namespace Installer
 {
    
-    public partial class Form2 : Form
+    public partial class InstallationCompleted : Form
     {
         
-        public Form2()
+        public InstallationCompleted()
         {
 
             RegistryKey reg = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");

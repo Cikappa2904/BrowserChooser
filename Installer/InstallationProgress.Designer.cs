@@ -1,7 +1,7 @@
 ﻿
 namespace Installer
 {
-    partial class Form3
+    partial class InstallationProgress
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Installer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstallationProgress));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();

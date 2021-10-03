@@ -1,7 +1,7 @@
 ﻿
 namespace Installer
 {
-    partial class Form2
+    partial class InstallationCompleted
     {
         /// <summary>
         /// Required designer variable.

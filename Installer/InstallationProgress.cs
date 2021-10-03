@@ -15,9 +15,9 @@ using Microsoft.Win32;
 
 namespace Installer
 {
-    public partial class Form3 : Form
+    public partial class InstallationProgress : Form
     {
-        public Form3()
+        public InstallationProgress()
         {
             InitializeComponent();
         }
