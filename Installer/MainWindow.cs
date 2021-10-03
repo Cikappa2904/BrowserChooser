@@ -32,24 +32,22 @@ namespace Installer
 
         }
 
-        public string Get_Form1Text()
-        {
-            return textBox1.Text;
-        }
+       //public string Get_Form1Text()
+       // {
+       //     return textBox1.Text;
+       // }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             System.Windows.Forms.OpenFileDialog folderBrowser = new System.Windows.Forms.OpenFileDialog();
             folderBrowser.ValidateNames = false;
             folderBrowser.CheckFileExists = false;
             folderBrowser.CheckPathExists = true;
-            folderBrowser.FileName = "Folder Selection.";
+            folderBrowser.FileName = "Select a folder.";
             if (folderBrowser.ShowDialog() == DialogResult.OK)
             {
                textBox1.Text = Path.GetDirectoryName(folderBrowser.FileName);
-                
             }
 
         }
@@ -65,7 +63,7 @@ namespace Installer
 
             this.Hide();
             form3.Show();
-            form3.Update(); //Like in uninstaller, don't exactly now if this is the right way to do it, but this makes the label display correctly lol
+            form3.Update(); //Like in uninstaller, don't exactly know if this is the right way to do it, but this makes the label display correctly lol
 
             //Selecting where the file will be stored
             string browserChooserDownloadPath = textBox1.Text + "\\BrowserChooser.exe";

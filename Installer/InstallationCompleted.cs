@@ -24,7 +24,7 @@ namespace Installer
         {
 
             RegistryKey reg = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
-            string productName = (string)reg.GetValue("ProductName");
+            string productName = reg.GetValue("ProductName").ToString();
 
 
             SystemSounds.Asterisk.Play(); //Playing Windows default sound

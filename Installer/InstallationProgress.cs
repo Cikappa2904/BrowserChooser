@@ -22,9 +22,9 @@ namespace Installer
             InitializeComponent();
         }
 
-        public void SetProgress(int progress)
-        {
-            progressBar1.Value = progress;
-        }
+        //public void SetProgress(int progress)
+        //{
+        //    progressBar1.Value = progress;
+        //}
     }
 }
