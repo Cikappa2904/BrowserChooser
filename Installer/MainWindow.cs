@@ -26,6 +26,12 @@ namespace Installer
         public MainWindow()
         {
 
+            string dotNetPath = Environment.ExpandEnvironmentVariables("%ProgramW6432%") + "\\dotnet\\shared\\Microsoft.NETCore.App";
+
+            if (!Directory.Exists(dotNetPath))
+            {
+
+            }
             InitializeComponent();
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;

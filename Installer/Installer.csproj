@@ -117,6 +117,12 @@
     <Compile Include="InstallationProgress.Designer.cs">
       <DependentUpon>InstallationProgress.cs</DependentUpon>
     </Compile>
+    <Compile Include="NetCoreInstaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetCoreInstaller.Designer.cs">
+      <DependentUpon>NetCoreInstaller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainWindow.resx">
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InstallationProgress.resx">
       <DependentUpon>InstallationProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetCoreInstaller.resx">
+      <DependentUpon>NetCoreInstaller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
