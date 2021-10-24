@@ -3,7 +3,6 @@ D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.Gen
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.pdb
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe.config
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.pdb
@@ -37,3 +36,6 @@ D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPI
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.MainWindow.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.InstallationCompleted.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.InstallationProgress.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreInstaller.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Installer.resources

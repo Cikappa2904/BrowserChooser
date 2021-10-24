@@ -22,19 +22,23 @@ namespace Installer
     {
         private ProgressBar progressBar1;
         private TextBox progressText;
+        
 
         public MainWindow()
         {
+            InitializeComponent();
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             string dotNetPath = Environment.ExpandEnvironmentVariables("%ProgramW6432%") + "\\dotnet\\shared\\Microsoft.NETCore.App";
 
             if (!Directory.Exists(dotNetPath))
             {
+                NetCoreInstaller netcoreinstaller = new NetCoreInstaller();
+                netcoreinstaller.ShowDialog();
+
 
             }
-            InitializeComponent();
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
         }
 
@@ -134,7 +138,9 @@ namespace Installer
             form2.Show();
         }
 
-         
-       
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
