@@ -93,15 +93,7 @@ namespace Installer
             string filePath = path + "\\BrowserChooser.exe";
             StartMenuInternet.SetValue("", filePath);
             StartMenuInternet.Close();
-        }
-
-        public static void Download(Uri downloadLink, string downloadPath)
-        {
-            WebClient myWebClient = new WebClient();
-            myWebClient.DownloadFile(downloadLink, downloadPath);
-        }
-
-    
+        } 
 
 
     }

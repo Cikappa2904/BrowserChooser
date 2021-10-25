@@ -51,81 +51,88 @@ namespace Installer
         {
             string version = "0.3.0.1";
 
-            InstallationProgress form3 = new InstallationProgress();
+            //Creating new form based on InstallationProgress form object
+            InstallationProgress form3 = new InstallationProgress(); 
             progressBar1 = form3.progressBar1;
             progressText = form3.textBox1;
 
-            this.Hide();
+            this.Hide(); 
             form3.Show();
             form3.Update(); //Like in uninstaller, don't exactly know if this is the right way to do it, but this makes the label display correctly lol
 
             //Selecting where the file will be stored
             string browserChooserDownloadPath = textBox1.Text + "\\BrowserChooser.exe";
             string uninstallerDownloadPath = textBox1.Text + "\\Uninstaller.exe";
+            string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
 
+            //Where to download the files from
             Uri browserChooserDownloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe");
             Uri uninstallerDownloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Release/Uninstaller.exe");
 
-            InstallerClass.CreateBrowserChooserFolder(textBox1.Text);
             progressText.AppendText("Creating " + textBox1.Text + Environment.NewLine);
-
-            string filePath = "\"" + textBox1.Text + "\\BrowserChooser.exe" + "\" %1";
+            InstallerClass.CreateBrowserChooserFolder(textBox1.Text);
 
             InstallerClass.CreateUninstallerRegistryKeys(version, browserChooserDownloadPath, uninstallerDownloadPath);
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall" + Environment.NewLine);
 
+
             progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
-            WebClient myWebClient = new WebClient();
-            myWebClient.DownloadFileAsync(browserChooserDownloadLink, browserChooserDownloadPath);
-            myWebClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFileAsync(browserChooserDownloadLink, browserChooserDownloadPath);
+                webClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
+            }
+            
 
             progressText.AppendText("- Starting to download Uninstaller.exe" + Environment.NewLine);
-            WebClient myWebClient1 = new WebClient();
-            myWebClient1.DownloadFileAsync(uninstallerDownloadLink, uninstallerDownloadPath);
-            myWebClient1.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFileAsync(uninstallerDownloadLink, uninstallerDownloadPath);
+                webClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
+            }
+                
 
             progressText.AppendText("- Adding registry keys to HKCR" + Environment.NewLine);
             InstallerClass.CreateBrowserChooserURL();
             progressBar1.Value = 20;
 
+
             progressText.AppendText("- Adding registry keys to HKCR\\BrowserChooserURL" + Environment.NewLine);
             InstallerClass.ShellBrowserChooserURL(filePath);
             progressBar1.Value = 30;
+
 
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\RegisteredApplications" + Environment.NewLine);
             InstallerClass.RegisteredApplications();
             progressBar1.Value = 40;
 
+
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet" + Environment.NewLine);
             InstallerClass.AddBrowserChooserToStartMenuInternet(textBox1.Text);
             progressBar1.Value = 50;
+
 
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
             InstallerClass.StartMenuInternetCapabilities();
             progressBar1.Value = 60;
 
+
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\Capabilities" + Environment.NewLine);
             InstallerClass.RegisterBrowserChooserForHTTPAndHTTPS();
             progressBar1.Value = 70;
 
+
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser" + Environment.NewLine);
             InstallerClass.DefaultIcon(textBox1.Text);
-            progressBar1.Value = 80;
+            progressBar1.Value = 75;
+
 
             progressText.AppendText("- Adding registry values to HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\BrowserChooser\\shell\\open\\command" + Environment.NewLine);
             InstallerClass.StartMenuInternetShell(textBox1.Text);
             progressBar1.Value = 80;
 
-            
-            //progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
-            //InstallerClass.Download(browserChooserDownloadLink, browserChooserDownloadPath); //Download BrowserChooser.exe from GitHub
-            //progressBar1.Value = 90;
 
-            //progressText.AppendText("- Starting to download Uninstaller.exe" + Environment.NewLine);
-            //InstallerClass.Download(uninstallerDownloadLink, uninstallerDownloadPath); //Download Uninstaller.exe from GitHub
-            //progressBar1.Value = 100;
-
-            InstallationCompleted form2 = new InstallationCompleted();
+            InstallationCompleted form2 = new InstallationCompleted(); 
             form2.Show();
         }
 
