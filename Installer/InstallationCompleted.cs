@@ -47,8 +47,6 @@ namespace Installer
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            //if (Application.OpenForms.OfType<Form1>().Any())
-            //    MessageBox.Show("Form is opened");
         }
 
         private void winSettings_Click(object sender, EventArgs e)

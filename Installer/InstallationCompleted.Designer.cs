@@ -78,10 +78,10 @@ namespace Installer
             this.winSettings.UseVisualStyleBackColor = true;
             this.winSettings.Click += new System.EventHandler(this.winSettings_Click);
             // 
-            // Form2
+            // InstallationCompleted
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(493, 135);
             this.Controls.Add(this.winSettings);
             this.Controls.Add(this.button1);
@@ -90,7 +90,7 @@ namespace Installer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form2";
+            this.Name = "InstallationCompleted";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Installer";
             this.ResumeLayout(false);

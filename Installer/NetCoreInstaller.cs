@@ -32,6 +32,7 @@ namespace Installer
 
             Close();
             downloadForm.Show();
+            downloadForm.Update();
             progressBar1 = downloadForm.progressBar1; 
             WebClient myWebClient = new WebClient();
             myWebClient.DownloadFileAsync(downloadLink, dotnetPath);
@@ -54,6 +55,7 @@ namespace Installer
             File.Delete(dotnetPath);
             MainWindow mainWindowForm = new MainWindow();
             mainWindowForm.Show();
+            mainWindowForm.Update();
         }
 
         private void button2_Click(object sender, EventArgs e)
