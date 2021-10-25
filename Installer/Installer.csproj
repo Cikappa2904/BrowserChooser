@@ -98,11 +98,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="NetCoreProgress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="NetCoreProgress.Designer.cs">
+      <DependentUpon>NetCoreProgress.cs</DependentUpon>
     </Compile>
     <Compile Include="InstallerClass.cs" />
     <Compile Include="MainWindow.cs">
@@ -131,8 +131,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="NetCoreProgress.resx">
+      <DependentUpon>NetCoreProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

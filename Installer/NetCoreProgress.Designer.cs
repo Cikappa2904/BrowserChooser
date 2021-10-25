@@ -1,7 +1,7 @@
 ﻿
 namespace Installer
 {
-    partial class Form1
+    partial class NetCoreProgress
     {
         /// <summary>
         /// Required designer variable.

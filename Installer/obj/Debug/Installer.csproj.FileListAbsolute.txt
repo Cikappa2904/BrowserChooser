@@ -38,4 +38,4 @@ D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Installati
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.InstallationProgress.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreInstaller.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form1.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreProgress.resources

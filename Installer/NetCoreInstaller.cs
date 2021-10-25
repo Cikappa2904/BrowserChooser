@@ -16,7 +16,7 @@ namespace Installer
     public partial class NetCoreInstaller : Form
     {
         string dotnetPath = System.IO.Path.GetTempPath() + "\\dotnet-runtime-3.1.20-win-x64.exe";
-        public Form1 downloadForm = new Form1();
+        public NetCoreProgress downloadForm = new NetCoreProgress();
         private ProgressBar progressBar1;
 
 

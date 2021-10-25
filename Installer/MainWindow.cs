@@ -22,7 +22,9 @@ namespace Installer
     {
         private ProgressBar progressBar1;
         private TextBox progressText;
-        
+        public bool isDownloadFinished;
+
+
 
         public MainWindow()
         {
@@ -131,8 +133,7 @@ namespace Installer
             InstallerClass.StartMenuInternetShell(textBox1.Text);
             progressBar1.Value = 80;
 
-
-            InstallationCompleted form2 = new InstallationCompleted(); 
+            InstallationCompleted form2 = new InstallationCompleted();
             form2.Show();
         }
 
