@@ -14,7 +14,6 @@ namespace Uninstaller
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             Process.Start(new ProcessStartInfo() //Deletes the program after 3 seconds
             {
                 Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
