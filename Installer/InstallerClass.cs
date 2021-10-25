@@ -101,9 +101,6 @@ namespace Installer
             myWebClient.DownloadFile(downloadLink, downloadPath);
         }
 
-    
-
-
     }
 
 }

@@ -71,7 +71,19 @@ namespace Installer
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
+
+                string dotNetPath = Environment.ExpandEnvironmentVariables("%ProgramW6432%") + "\\dotnet\\shared\\Microsoft.NETCore.App";
+
+                if (!Directory.Exists(dotNetPath))
+                {
+                    NetCoreInstaller netCoreInstallerForm = new NetCoreInstaller();
+                    netCoreInstallerForm.Show();
+                    Application.Run();
+                }
+                else
+                {
+                    Application.Run(new MainWindow());
+                }
             }
 
             

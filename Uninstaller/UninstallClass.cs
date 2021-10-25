@@ -19,7 +19,7 @@ namespace Uninstaller
                 if (File.Exists(filePath)) //Check if file exists
                 {
                     File.Delete(filePath);
-                }
+                }              
             }
         }
 

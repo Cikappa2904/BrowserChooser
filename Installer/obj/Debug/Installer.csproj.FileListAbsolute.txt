@@ -1,11 +1,8 @@
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form1.resources
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form2.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Properties.Resources.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.GenerateResource.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.pdb
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe.config
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Installer.pdb
@@ -32,8 +29,13 @@ D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.CoreCompil
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComplete
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.exe
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.pdb
-D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources
 D:\Claudio\GitHub\BrowserChooser\Installer\obj\Debug\Installer.Form3.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.CopyComplete
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
 D:\File Personali\Github\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.MainWindow.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.InstallationCompleted.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.InstallationProgress.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreInstaller.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
+D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreProgress.resources
