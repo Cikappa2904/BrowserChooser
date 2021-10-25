@@ -16,7 +16,8 @@ namespace Installer
     public partial class NetCoreInstaller : Form
     {
         string dotnetPath = System.IO.Path.GetTempPath() + "\\dotnet-runtime-3.1.20-win-x64.exe";
-        Form1 downloadForm = new Form1();
+        public Form1 downloadForm = new Form1();
+        private ProgressBar progressBar1;
 
 
         public NetCoreInstaller()
@@ -28,17 +29,19 @@ namespace Installer
         {
             Uri downloadLink = new System.Uri("https://download.visualstudio.microsoft.com/download/pr/8f1a8283-54b1-46d0-96c3-02949986baba/5d1b2bf23eb9addb9a372f32f6992b25/dotnet-runtime-3.1.20-win-x64.exe");
 
+            this.Close();
+            downloadForm.Show();
             //InstallerClass.Download(downloadLink, dotnetPath);
             WebClient myWebClient = new WebClient();
             myWebClient.DownloadFileAsync(downloadLink, dotnetPath);
             myWebClient.DownloadProgressChanged += MyWebClient_DownloadProgressChanged;
             myWebClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted; //Event Handler to check if download has completed
-  
+            progressBar1 = downloadForm.progressBar1;
         }
 
         private void MyWebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            progressBar1.Value = e.ProgressPercentage;
         }
 
         private void MyWebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)

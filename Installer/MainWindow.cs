@@ -31,21 +31,14 @@ namespace Installer
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             string dotNetPath = Environment.ExpandEnvironmentVariables("%ProgramW6432%") + "\\dotnet\\shared\\Microsoft.NETCore.App";
-
+            
             if (!Directory.Exists(dotNetPath))
             {
                 NetCoreInstaller netcoreinstaller = new NetCoreInstaller();
                 netcoreinstaller.ShowDialog();
-
-
             }
 
         }
-
-       //public string Get_Form1Text()
-       // {
-       //     return textBox1.Text;
-       // }
 
 
         private void button2_Click(object sender, EventArgs e)
