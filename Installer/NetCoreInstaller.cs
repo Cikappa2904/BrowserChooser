@@ -31,7 +31,7 @@ namespace Installer
 
             this.Close();
             downloadForm.Show();
-            //InstallerClass.Download(downloadLink, dotnetPath);
+
             WebClient myWebClient = new WebClient();
             myWebClient.DownloadFileAsync(downloadLink, dotnetPath);
             myWebClient.DownloadProgressChanged += MyWebClient_DownloadProgressChanged;
