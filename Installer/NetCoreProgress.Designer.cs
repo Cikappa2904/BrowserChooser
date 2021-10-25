@@ -29,6 +29,7 @@ namespace Installer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetCoreProgress));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -50,7 +51,7 @@ namespace Installer
             this.label1.TabIndex = 1;
             this.label1.Text = "Installer is downloading .NET Core 3.1 from Microsoft";
             // 
-            // Form1
+            // NetCoreProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -59,8 +60,9 @@ namespace Installer
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "NetCoreProgress";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Installer";
             this.ResumeLayout(false);
