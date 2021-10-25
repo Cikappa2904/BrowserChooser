@@ -28,15 +28,15 @@ namespace Installer
         private void button1_Click(object sender, EventArgs e)
         {
             Uri downloadLink = new System.Uri("https://download.visualstudio.microsoft.com/download/pr/8f1a8283-54b1-46d0-96c3-02949986baba/5d1b2bf23eb9addb9a372f32f6992b25/dotnet-runtime-3.1.20-win-x64.exe");
+            
 
-            this.Close();
+            Close();
             downloadForm.Show();
-
+            progressBar1 = downloadForm.progressBar1; 
             WebClient myWebClient = new WebClient();
             myWebClient.DownloadFileAsync(downloadLink, dotnetPath);
             myWebClient.DownloadProgressChanged += MyWebClient_DownloadProgressChanged;
             myWebClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted; //Event Handler to check if download has completed
-            progressBar1 = downloadForm.progressBar1;
         }
 
         private void MyWebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
@@ -46,12 +46,14 @@ namespace Installer
 
         private void MyWebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            this.Close();
+            downloadForm.Close();
             Process dotnetInstaller = new Process();
             dotnetInstaller.StartInfo.FileName = dotnetPath;
             dotnetInstaller.Start();
             dotnetInstaller.WaitForExit();
             File.Delete(dotnetPath);
+            MainWindow mainWindowForm = new MainWindow();
+            mainWindowForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

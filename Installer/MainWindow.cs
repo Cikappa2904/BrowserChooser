@@ -29,15 +29,6 @@ namespace Installer
             InitializeComponent();
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-
-            string dotNetPath = Environment.ExpandEnvironmentVariables("%ProgramW6432%") + "\\dotnet\\shared\\Microsoft.NETCore.App";
-            
-            if (!Directory.Exists(dotNetPath))
-            {
-                NetCoreInstaller netcoreinstaller = new NetCoreInstaller();
-                netcoreinstaller.ShowDialog();
-            }
-
         }
 
 
