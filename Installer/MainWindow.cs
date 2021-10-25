@@ -47,7 +47,7 @@ namespace Installer
         }
 
    
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             string version = "0.3.0.1";
 
@@ -66,7 +66,6 @@ namespace Installer
             Uri browserChooserDownloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/BrowserChooser/bin/Release/netcoreapp3.1/publish/BrowserChooser.exe");
             Uri uninstallerDownloadLink = new System.Uri("https://raw.githubusercontent.com/Cikappa2904/BrowserChooser/main/Uninstaller/bin/Release/Uninstaller.exe");
 
-
             InstallerClass.CreateBrowserChooserFolder(textBox1.Text);
             progressText.AppendText("Creating " + textBox1.Text + Environment.NewLine);
 
@@ -75,7 +74,15 @@ namespace Installer
             InstallerClass.CreateUninstallerRegistryKeys(version, browserChooserDownloadPath, uninstallerDownloadPath);
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall" + Environment.NewLine);
 
+            progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
+            WebClient myWebClient = new WebClient();
+            myWebClient.DownloadFileAsync(browserChooserDownloadLink, browserChooserDownloadPath);
+            myWebClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
 
+            progressText.AppendText("- Starting to download Uninstaller.exe" + Environment.NewLine);
+            WebClient myWebClient1 = new WebClient();
+            myWebClient1.DownloadFileAsync(uninstallerDownloadLink, uninstallerDownloadPath);
+            myWebClient1.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
 
             progressText.AppendText("- Adding registry keys to HKCR" + Environment.NewLine);
             InstallerClass.CreateBrowserChooserURL();
@@ -110,16 +117,21 @@ namespace Installer
             progressBar1.Value = 80;
 
             
-            progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
-            InstallerClass.Download(browserChooserDownloadLink, browserChooserDownloadPath); //Download BrowserChooser.exe from GitHub
-            progressBar1.Value = 90;
+            //progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
+            //InstallerClass.Download(browserChooserDownloadLink, browserChooserDownloadPath); //Download BrowserChooser.exe from GitHub
+            //progressBar1.Value = 90;
 
-            progressText.AppendText("- Starting to download Uninstaller.exe" + Environment.NewLine);
-            InstallerClass.Download(uninstallerDownloadLink, uninstallerDownloadPath); //Download Uninstaller.exe from GitHub
-            progressBar1.Value = 100;
+            //progressText.AppendText("- Starting to download Uninstaller.exe" + Environment.NewLine);
+            //InstallerClass.Download(uninstallerDownloadLink, uninstallerDownloadPath); //Download Uninstaller.exe from GitHub
+            //progressBar1.Value = 100;
 
             InstallationCompleted form2 = new InstallationCompleted();
             form2.Show();
+        }
+
+        private void MyWebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            progressBar1.Value += 10;
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
