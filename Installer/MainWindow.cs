@@ -51,7 +51,7 @@ namespace Installer
    
         public void button1_Click(object sender, EventArgs e)
         {
-            string version = "0.3.0.1";
+            string version = "1.0.0.0";
 
             //Creating new form based on InstallationProgress form object
             InstallationProgress form3 = new InstallationProgress(); 

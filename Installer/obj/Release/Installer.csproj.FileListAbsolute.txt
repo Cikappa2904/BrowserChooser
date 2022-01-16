@@ -6,12 +6,14 @@ D:\File Personali\Github\BrowserChooser\Installer\bin\Release\Microsoft.WindowsA
 D:\File Personali\Github\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.xml
 D:\File Personali\Github\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.AssemblyReference.cache
-D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.Form1.resources
-D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.Form2.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.Properties.Resources.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.GenerateResource.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.CoreCompileInputs.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.csproj.CopyComplete
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.exe
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.pdb
-D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.Form3.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.NetCoreProgress.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.MainWindow.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.InstallationCompleted.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.InstallationProgress.resources
+D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.NetCoreInstaller.resources
