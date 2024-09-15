@@ -14,6 +14,7 @@ using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
 using System.Reflection;
 using System.Security.Principal;
+using Installer.Properties;
 
 
 namespace Installer
@@ -78,7 +79,7 @@ namespace Installer
             progressText.AppendText("- Adding registry keys to HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall" + Environment.NewLine);
 
 
-            progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
+            /*progressText.AppendText("- Starting to download BrowserChooser.exe" + Environment.NewLine);
             using (WebClient webClient = new WebClient())
             {
                 webClient.DownloadFileAsync(browserChooserDownloadLink, browserChooserDownloadPath);
@@ -91,8 +92,35 @@ namespace Installer
             {
                 webClient.DownloadFileAsync(uninstallerDownloadLink, uninstallerDownloadPath);
                 webClient.DownloadFileCompleted += MyWebClient_DownloadFileCompleted;
-            }
+            }*/
+
+            Dictionary<string, byte[]> resources = new Dictionary<string, byte[]>()
+            {
+                {"BrowserChooser.exe", Properties.Resources.BrowserChooser },
+                {"BrowserChooser.dll", Properties.Resources.BrowserChooserDLL},
+                {"BrowserChooser.runtimeconfig.json", Properties.Resources.BrowserChooser_runtimeconfig },
+                {"Uninstaller.exe", Properties.Resources.Uninstaller }
+            };
+
+
+            foreach (KeyValuePair<string, byte[]> element in resources)
+            {
+                string filePath2 = textBox1.Text + "\\" + element.Key;
+                if (File.Exists(filePath2))
+                {
+                    File.Delete(filePath2);
+                }
+                FileStream fileStream = new FileStream(filePath2, FileMode.CreateNew);
                 
+                for (int i = 0; i < element.Value.Length; i++)
+                    fileStream.WriteByte((byte)element.Value[i]);
+                fileStream.Close();
+            }
+
+
+          
+
+          
 
             progressText.AppendText("- Adding registry keys to HKCR" + Environment.NewLine);
             InstallerClass.CreateBrowserChooserURL();

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>Cikappa2904</Authors>
     <Description>Choose what browser you want every time you click on a link</Description>
     <PackageProjectUrl>https://github.com/Cikappa2904/BrowserChooser</PackageProjectUrl>

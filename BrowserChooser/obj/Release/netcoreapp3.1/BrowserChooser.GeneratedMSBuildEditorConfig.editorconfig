@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = BrowserChooser
-build_property.ProjectDir = D:\File Personali\Github\BrowserChooser\BrowserChooser\
+build_property.ProjectDir = C:\Users\Claudio\Documents\GitHub\BrowserChooser\BrowserChooser\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

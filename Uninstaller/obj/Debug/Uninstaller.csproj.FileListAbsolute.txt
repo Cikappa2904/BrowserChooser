@@ -22,3 +22,15 @@ D:\Claudio\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Form3.resourc
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.MainWindow.resources
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.ProgressWindow.resources
 D:\File Personali\Github\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.CompletedWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.exe.config
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\bin\Debug\Uninstaller.pdb
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.csproj.AssemblyReference.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.MainWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.ProgressWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.CompletedWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.Properties.Resources.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.csproj.GenerateResource.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Uninstaller\obj\Debug\Uninstaller.pdb

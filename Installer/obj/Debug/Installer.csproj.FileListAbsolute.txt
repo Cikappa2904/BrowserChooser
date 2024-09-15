@@ -39,3 +39,22 @@ D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.Installati
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreInstaller.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
 D:\File Personali\Github\BrowserChooser\Installer\obj\Debug\Installer.NetCoreProgress.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Installer.exe.config
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Installer.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Installer.pdb
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.NetCoreProgress.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.MainWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.InstallationCompleted.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.InstallationProgress.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.NetCoreInstaller.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.Properties.Resources.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.GenerateResource.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.csproj.Up2Date
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Debug\Installer.pdb

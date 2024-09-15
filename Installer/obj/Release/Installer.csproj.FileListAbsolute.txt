@@ -17,3 +17,22 @@ D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.MainWind
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.InstallationCompleted.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.InstallationProgress.resources
 D:\File Personali\Github\BrowserChooser\Installer\obj\Release\Installer.NetCoreInstaller.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Installer.exe.config
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Installer.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Installer.pdb
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.csproj.AssemblyReference.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.NetCoreProgress.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.MainWindow.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.InstallationCompleted.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.InstallationProgress.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.NetCoreInstaller.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.Properties.Resources.resources
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.csproj.GenerateResource.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.csproj.Up2Date
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.exe
+C:\Users\Claudio\Documents\GitHub\BrowserChooser\Installer\obj\Release\Installer.pdb

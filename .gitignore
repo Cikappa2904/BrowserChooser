@@ -1,3 +1,8 @@
 BrowserChooser/bin/
+BrowserChooser/obj/
 Installer/bin/
+Installer/obj/
 Uninstaller/bin/
+Uninstaller/obj/
+.vs/
+
