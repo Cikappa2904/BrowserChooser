@@ -20,20 +20,23 @@ namespace Uninstaller
             if (args.Length > 0 && args[0] == "/s")
             {
 
-                UninstallClass.DeleteUninstaller();
+                //UninstallClass.DeleteUninstaller();
 
                 UninstallClass.DeleteBrowserChooserURL();
                 UninstallClass.DeleteSMIBrowserChooser();
                 UninstallClass.DeleteRegAppBrowserChooser();
                 UninstallClass.DeleteUninstallRegBrowserChooser();
 
-                Process.Start(new ProcessStartInfo() //Deletes the program after 3 seconds
+                string fileName = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf("\\", 0));
+
+                Process.Start(new ProcessStartInfo()
                 {
-                    Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
-                    WindowStyle = ProcessWindowStyle.Hidden,
-                    CreateNoWindow = true,
+                    Arguments = "/C choice /C Y /N /D Y /T 3 & rmdir /s /q \"" + fileName + "\"",
+                    //WindowStyle = ProcessWindowStyle.Hidden,
+                    CreateNoWindow = false,
                     FileName = "cmd.exe"
                 });
+
 
                 Application.Exit();
             }

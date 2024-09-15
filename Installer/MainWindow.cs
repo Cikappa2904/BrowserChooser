@@ -107,7 +107,7 @@ namespace Installer
             {
                 string filePath2 = textBox1.Text + "\\" + element.Key;
                 if (File.Exists(filePath2))
-                {
+                {//TODO: make sure file isn't in use
                     File.Delete(filePath2);
                 }
                 FileStream fileStream = new FileStream(filePath2, FileMode.CreateNew);

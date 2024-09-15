@@ -53,7 +53,7 @@ namespace Uninstaller
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(57, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 26);
+            this.label1.Size = new System.Drawing.Size(267, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Are you sure you want to remove Browser Chooser\r\nfrom your computer?\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;

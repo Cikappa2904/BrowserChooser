@@ -14,9 +14,13 @@ namespace Uninstaller
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Process.Start(new ProcessStartInfo() //Deletes the program after 3 seconds
+            string fileName = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf("\\"));
+
+            //TODO: make sure to delete also the folder
+
+            Process.Start(new ProcessStartInfo()
             {
-                Arguments = "/C choice /C Y /N /D Y /T 3 & Del \"" + Application.ExecutablePath + "\"",
+                Arguments = "/C timeout /t 3 & rmdir /s /q \"" + fileName + "\"",
                 WindowStyle = ProcessWindowStyle.Hidden,
                 CreateNoWindow = true,
                 FileName = "cmd.exe"
